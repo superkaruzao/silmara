@@ -1,0 +1,956 @@
+<html>
+    <head>
+        <title>Silmara Aquino Advogados Associados</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+        
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/estilos.css">
+        
+        <style>
+        
+            /* Geral */
+            
+            :root {
+              --swiper-navigation-size: 20px !important;
+              --swiper-theme-color: #000 !important;
+            }
+            
+            body, html {
+                font-family: "DM Sans", sans-serif;
+            }
+        
+            /* Principal */
+            
+            .principal {
+                background-color: #000;
+                padding: 6em 1em;
+            }
+            
+            .principal .conteudo {
+                width: 50%;
+            }
+            
+            .principal .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            .principal .conteudo .titulo p {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 200;
+            }
+            
+            .principal .conteudo .botao p {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+            
+            .principal .conteudo .botao img {
+                display: block;
+                margin-bottom: 1.5em;
+                width: 150px;
+            }
+            
+            .principal .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                display: inline-block;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            /* Serviços */
+            
+            .servicos {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .servicos .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .servicos .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            
+            .servicos .conteudo .items .item {
+                border: 2px solid #000;
+                border-radius: 15px;
+                padding: 1.5em 1em;
+            }
+            
+            .servicos .conteudo .items .item .icone {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .servicos .conteudo .items .item .icone img {
+                width: 75px;
+            }
+            
+            .servicos .conteudo .items .item .info {
+                text-align: center;
+            }
+            
+            .servicos .conteudo .items .item .info h3 {
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            
+            /* Porque */
+            
+            .porque {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .porque .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .porque .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-bottom: 3em;
+            }
+            
+            .porque .conteudo .items .item {
+                background-color: #fff;
+                border-radius: 15px;
+                display: flex;
+                gap: 15px;
+                padding: 1em;
+            }
+            
+            .porque .conteudo .items .item .icone {
+                background-color: #000;
+                border-radius: 15px;
+                height: fit-content;
+                padding: 10px;
+            }
+            
+            .porque .conteudo .items .item .icone i {
+                color: #fff;
+                font-size: 2em;
+            }
+            
+            .porque .conteudo .items .item .info {
+                color: #000;
+            }
+            
+            .porque .conteudo .items .item .info h3 {
+                align-items: center;
+                border-bottom: 1px solid #000;
+                display: flex;
+                gap: 15px;
+                font-weight: 500;
+                margin-top: 0;
+                padding-bottom: 1em;
+            }
+            
+            .porque .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .porque .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            /* Passo a Passo */
+            
+            .passo {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .passo .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .passo .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            
+            .passo .conteudo .items .item {
+                align-items: center;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .passo .conteudo .items .item .numero span {
+                color: #fff;
+                font-weight: 600;
+                font-size: 20em;
+                text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+            }
+            
+            .passo .conteudo .items .item .texto.mt {
+                margin-top: 2em;
+            }
+            
+            .passo .conteudo .items .item .texto span {
+                border-bottom: 1px solid #000;
+                display: inline-block;
+                font-weight: 600;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+            }
+            
+            /* Equipe */
+            
+            .equipe {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .equipe .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .equipe .conteudo .items .texto h3 {
+                color: #fff;
+                font-size: 2.2em;
+                font-weight: 300;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items .texto span {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items .texto p {
+                color: #fff;
+            }
+            
+            /* Avaliações */
+            
+            .avaliacoes {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .avaliacoes .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .avaliacoes .conteudo .items .swiper {
+                height: fit-content;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item {
+                background-color: #7373731A;
+                height: 300px;
+                padding: 2em;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo h3 {
+                font-size: 1.2em;
+                margin-bottom: 0.5em;
+                text-transform: none;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo img {
+                width: 25px;
+            }
+             
+            .avaliacoes .conteudo .items .swiper .item .texto .estrelas i {
+                color: #f6ba04;
+            }
+             
+            .avaliacoes .conteudo .items .swiper .item .texto p {
+                margin-top: 0.5em;
+            }
+            
+            .avaliacoes .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .avaliacoes .conteudo .botao p {
+                font-size: 1.5em;
+                text-align: center;
+            }
+            
+            .avaliacoes .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            /* Perguntas Frequentes */
+            
+            .perguntas {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .perguntas .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .perguntas .conteudo .items {
+                margin: 0 auto;
+                max-width: 800px;
+            }
+            
+            .perguntas .conteudo .items .item {
+                border-bottom: 1px solid #fff;
+                margin-bottom: 1em;
+                padding: 1em 0em;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta {
+                align-items: center;
+                cursor: pointer;
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta h3 {
+                color: #fff;
+                font-size: 1.25em;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta i {
+                color: #fff;
+                font-size: 1em;
+            }
+            
+            .perguntas .conteudo .items .item .resposta {
+                display: none;
+                padding-top: 1em;
+            }
+            
+            .perguntas .conteudo .items .item .resposta p {
+                color: #fff;
+            }
+            
+            .perguntas .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            /* Rodapé */
+            
+            footer {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            footer .conteudo .items {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            
+            footer .conteudo .items .logo img {
+                width: 150px;
+            }
+            
+            footer .conteudo .items .item h3 {
+                color: #000;
+                font-size: 1.5em;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            footer .conteudo .items .item .links {
+                display: grid;
+                gap: 20px;
+            }
+            
+            footer .conteudo .items .item .links a {
+                align-items: center;
+                color: #000;
+                display: flex;
+                gap: 10px;
+                text-decoration: none;
+            }
+            
+            /* Copyright */
+            
+            .copyright {
+                background-color: #000;
+                color: #fff;
+                padding: 2em 1em;
+                text-align: center;
+            }
+            
+            .copyright p {
+                font-weight: 300;
+                margin: 0;
+            }
+            
+            /* Responsivo */
+            
+            @media(max-width: 768px) {
+                
+                .principal .conteudo {
+                    width: 100%;
+                }
+                
+                .principal .conteudo .titulo h3, .servicos .conteudo .titulo h3, .porque .conteudo .titulo h3, .passo .conteudo .titulo h3, .equipe .conteudo .titulo h3, .avaliacoes .conteudo .titulo h3, .perguntas .conteudo .titulo h3 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+                
+                .principal .conteudo .titulo p, .principal .conteudo .botao p, .principal .conteudo .botao a, .avaliacoes .conteudo .botao a, footer .conteudo .items .item h3 {
+                    text-align: center;
+                }
+                
+                .principal .conteudo .botao {
+                    display: grid;
+                    justify-content: center;
+                }
+                
+                .principal .conteudo .botao img {
+                    margin: 0 auto;
+                    margin-bottom: 1.5em;
+                }
+                
+                .servicos .conteudo .items, .porque .conteudo .items, .passo .conteudo .items, .equipe .conteudo .items, footer .conteudo .items {
+                    grid-template-columns: 1fr;
+                }
+                
+                footer .conteudo .items .logo {
+                    display: grid;
+                    justify-content: center;
+                }
+                
+                footer .conteudo .items .item .links {
+                    justify-content: center;
+                }
+                
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <!-- Principal -->
+        <section class="principal">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Teve um Acidente de Trabalho? Você Pode Ter Direito à Indenização ou Estabilidade no Emprego</h3>
+                        <p> A Silmara Aquino Advocacia é especialista em defender os direitos de quem sofreu acidentes no ambiente de trabalho.</p>
+                    </div>
+                    <div class="botao">
+                        <p>Advogada 5 estrelas no Google</p>
+                        <img src="imagens/google.webp">
+                        <a href="javascript:void(0);">
+                            <i class="bi bi-whatsapp"></i>
+                            Entre em contato agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Serviços --->
+        <section class="servicos">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Atuamos em todas as frentes do Direito Trabalhista relacionadas a acidentes de trabalho</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-demissao.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Estabilidade após Acidente de Trabalho</h3>
+                                <p>Se você foi afastado pelo INSS por acidente de trabalho, tem direito à estabilidade no emprego por no mínimo 12 meses após a alta médica. Se foi demitido nesse período, pode ter direito à reintegração ou indenização.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-estabilidade.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Indenização por Acidente de Trabalho</h3>
+                                <p>Você pode ter direito a indenizações por danos morais, materiais ou estéticos se ficou com sequelas, sofreu perda de capacidade laboral ou enfrentou negligência da empresa quanto à sua segurança.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-rescisao.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Acidente sem Registro em Carteira</h3>
+                                <p>Mesmo sem carteira assinada, é possível buscar o reconhecimento do vínculo e garantir os seus direitos.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-vinculo.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Doenças Ocupacionais</h3>
+                                <p>Doenças causadas pelas atividades exercidas também são consideradas acidentes de trabalho e garantem os mesmos direitos legais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Porque -->
+        <section class="porque">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Por que escolher a<br> Silmara Aquino Advogados Associados?</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-check2-square"></i>
+                                    </div>
+                                    +30 anos de experiência e mais de 2.000 casos vencidos
+                                </h3>
+                                <p>Resultados comprovados em ações trabalhistas, com foco em justiça para o trabalhador.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-person-up"></i>
+                                    </div>
+                                    Atendimento Humanizado e Acompanhamento Contínuo
+                                </h3>
+                                <p>Do primeiro contato ao resultado final, oferecemos suporte contínuo, com uma comunicação clara e transparente. Você sempre será informado sobre cada etapa do seu caso.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    Alta taxa de sucesso com estratégias personalizadas
+                                </h3>
+                                <p>Cada caso é analisado com profundidade para definir a melhor abordagem jurídica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <a href="javascript:void(0);">
+                            <i class="bi bi-whatsapp"></i>
+                            Fale com um advogado trabalhista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Passo a Passo -->
+        <section class="passo">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Entenda como será o passo a passo do seu processo</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="numero">
+                                <span>1</span>
+                            </div>
+                            <div class="texto">
+                                <span>passo</span>
+                                <h3>Consultoria Inicial</h3>
+                                <p>Agende uma consulta com o escritório para entender a fundo seu caso. Avaliamos a situação com um olhar jurídico atento para cada detalhe.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="numero">
+                                <span>2</span>
+                            </div>
+                            <div class="texto">
+                                <span>passo</span>
+                                <h3>Análise e Estratégia Jurídica</h3>
+                                <p>Após a consulta, nossa equipe desenvolverá uma estratégia personalizada para o seu caso, focada em uma resolução eficiente.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="numero">
+                                <span>3</span>
+                            </div>
+                            <div class="texto mt">
+                                <span>passo</span>
+                                <h3>Acompanhamento e Ação</h3>
+                                <p>Estamos ao seu lado em todo o processo, garantindo acompanhamento contínuo e ajustes na estratégia conforme necessário.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Equipe -->
+        <div class="equipe">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Conheça nossa equipe</h3>
+                    </div>
+                    <div class="items">
+                        <div class="imagem">
+                            <img src="imagens/">
+                        </div>
+                        <div class="texto">
+                            <h3>Silmara Aquino</h3>
+                            <span>OAB/UF 000.000</span>
+                            <p>Sou advogada especializada em Direito do Trabalho, formada em Direito pela [Nome da Universidade], com ampla experiência na defesa dos direitos dos trabalhadores. 
+                                <br><br>
+                                Atuo com seriedade e compromisso na solução de conflitos trabalhistas, sempre em busca de justiça.
+                                <br><br>
+                                Ao longo da minha trajetória, tive a oportunidade de atuar em importantes órgãos jurídicos, e diversos casos trabalhistas que me proporcionaram uma visão estratégica e técnica — desde ações de reconhecimento de vínculo, verbas rescisórias, horas extras e acidentes de trabalho, até consultorias preventivas para empresas.
+                                <br><br>
+                                Minha missão é garantir que cada cliente seja ouvido, orientado e representado com ética, clareza e excelência, promovendo segurança jurídica e resultados efetivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Avaliações -->
+        <div class="avaliacoes">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Avaliações de Clientes</h3>
+                    </div>
+                    <div class="items">
+                        <div class="swiper">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <h3>Marcos Brito</h3>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>Conheci a Dra. Silmara num momento delicado. Fui atendido com empatia, profissionalismo e agilidade. Uma advogada que realmente se importa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <h3>Carlos Phyl Andrade</h3>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>A Silmara me ajudou a reverter minha demissão discriminatória. Não só conseguiu meu retorno ao trabalho, como também garantiu uma compensação justa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <h3>Beatriz Mendes</h3>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>Além de ser uma advogada extremamente competente, a Dra. Silmara demonstrou muita empatia e dedicação durante todo o meu processo trabalhista. Ela analisou cada detalhe com atenção e sempre me manteve informada sobre todos os passos. Excelente atendimento, recomendo de olhos fechados!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <h3>Ricardo Tavares</h3>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>Sofri um acidente em serviço e fiquei com sequelas. A equipe da Silmara me ajudou a garantir uma indenização justa. Recomendo de olhos fechados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="item">
+                                <div class="titulo">
+                                    <h3>Juliana Ferreira Lopes</h3>
+                                    <img src="imagens/icone-google.svg">
+                                </div>
+                                <div class="texto">
+                                    <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    <p>Após um acidente na empresa, fui demitida e nem sabia que tinha direito à estabilidade. A Silmara cuidou de tudo e consegui ser reintegrada.</p>
+                                </div>
+                            </div>
+                          </div>
+                          </div>
+                          <!-- If we need pagination -->
+                          <!--<div class="swiper-pagination"></div>-->
+                        
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <p>Temos a solução para o seu caso</p>
+                        <a href="javascript:void(0);">
+                            <i class="bi bi-whatsapp"></i>
+                            Converse com um advogado trabalhista
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Perguntas Frequentes -->
+        <div class="perguntas">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Perguntas Frequentes</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Tenho direito à estabilidade mesmo sendo demitido após acidente?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Sim. A lei prevê estabilidade mínima de 12 meses após a alta do INSS, mesmo que o contrato tenha sido encerrado nesse período.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>E se a empresa não registrou o acidente como sendo de trabalho?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>É possível comprovar a relação com o trabalho por outros meios e garantir seus direitos.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Como saber se tenho direito à indenização?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>A análise depende do tipo de acidente, consequências e conduta da empresa. Agende uma consulta e receba um parecer jurídico completo.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Vocês atendem casos fora da cidade?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Sim. Fazemos atendimentos online para todo o Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="items">
+                        <div class="item logo">
+                            <img src="imagens/logo.webp">
+                        </div>
+                        <div class="item">
+                            <h3>Contato</h3>
+                            <div class="links">
+                                <a href="javascript:void(0);">
+                                    <i class="bi bi-whatsapp"></i> ()
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <i class="bi bi-envelope"></i> 
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h3>Redes Sociais</h3>
+                            <div class="links">
+                                <a href="https://www.instagram.com/silmaraaquinoadvogados">
+                                    <i class="bi bi-instagram"></i> @silmaraaquinoadvogados
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Copyright -->
+        <section class="copyright">
+            <p>Copyrigth Silmara Aquino Advogados Associados – 2025 © Todos os direitos reservados.</p>
+        </section>
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Scripts -->
+        <script>
+            
+            const swiper = new Swiper('.swiper', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+              autoplay: {
+                delay: 5000,
+              },
+              breakpoints: {
+                  1: {
+                    slidesPerView: 1,
+                    spaceBetween: 20, 
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20, 
+                  }
+              },
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+            
+        </script>
+        
+    </body>
+</html>
