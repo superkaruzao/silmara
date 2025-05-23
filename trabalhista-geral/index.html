@@ -687,7 +687,7 @@
                         </div>
                         <div class="texto">
                             <h3>Silmara Aquino</h3>
-                            <span>OAB/UF 000.000</span>
+                            <span>OAB/MG 58769</span>
                             <p>Sou advogada especializada em Direito do Trabalho, formada em Direito pela [Nome da Universidade], com ampla experiência na defesa dos direitos dos trabalhadores. 
                                 <br><br>
                                 Atuo com seriedade e compromisso na solução de conflitos trabalhistas, sempre em busca de justiça.
@@ -884,13 +884,12 @@
                             <h3>Contato</h3>
                             <div class="links">
                                 <a href="javascript:void(0);">
-                                    <i class="bi bi-whatsapp"></i> ()
+                                    <i class="bi bi-whatsapp"></i> 
+                                    (35) 98431-2935
                                 </a>
-                                <a href="javascript:void(0);">
-                                    <i class="bi bi-envelope"></i> 
-                                </a>
-                                <a href="javascript:void(0);">
+                                <a href="https://g.co/kgs/pvLqpuZ">
                                     <i class="bi bi-geo-alt-fill"></i>
+                                    R. Nossa Sra. Aparecida, 237 - Vila Martins, Varginha - MG, 37010-260
                                 </a>
                             </div>
                         </div>
@@ -948,6 +947,28 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
+            });
+            
+            // Perguntas
+            $(".pergunta").click(function() {
+                
+                // Se está fechado
+                if(!$(this).parent().hasClass("aberto")) {
+                    
+                    $(this).parent().addClass("aberto");
+                    $(this).children("i").removeClass("bi-plus-lg");
+                    $(this).children("i").addClass("bi-dash-lg");
+                    
+                }
+                
+                else if($(this).parent().hasClass("aberto")) {
+                    
+                    $(this).parent().removeClass("aberto");
+                    $(this).children("i").removeClass("bi-dash-lg");
+                    $(this).children("i").addClass("bi-plus-lg");
+                    
+                }
+                
             });
             
         </script>
